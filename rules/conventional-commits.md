@@ -1,10 +1,10 @@
 # Conventional Commits
 
-Always write commit messages following the Conventional Commits specification.
+Always write commit messages following the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ## Format
 
-```
+```txt
 <type>[optional scope]: <description>
 
 [optional body]
@@ -15,7 +15,7 @@ Always write commit messages following the Conventional Commits specification.
 ## Types
 
 | Type | Use when |
-|------|----------|
+| ------ | ---------- |
 | `feat` | A new feature |
 | `fix` | A bug fix |
 | `docs` | Documentation changes only |
@@ -37,7 +37,7 @@ Always write commit messages following the Conventional Commits specification.
 
 ## Examples
 
-```
+```txt
 feat(auth): add OAuth2 login support
 fix: prevent crash when config file is missing
 docs: update installation instructions

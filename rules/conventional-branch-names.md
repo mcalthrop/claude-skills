@@ -1,10 +1,10 @@
 # Conventional Branch Names
 
-Always name branches following this convention.
+Always name branches following the [Conventional Branch specification](https://conventional-branch.github.io/).
 
 ## Format
 
-```
+```txt
 <type>/<short-description>
 ```
 
@@ -13,7 +13,7 @@ Use the same types as Conventional Commits. The short description should be lowe
 ## Types
 
 | Type | Use when |
-|------|----------|
+| ------ | ---------- |
 | `feat` | Implementing a new feature |
 | `fix` | Fixing a bug |
 | `docs` | Documentation-only changes |
@@ -34,7 +34,7 @@ Use the same types as Conventional Commits. The short description should be lowe
 
 ## Examples
 
-```
+```txt
 feat/user-authentication
 fix/null-pointer-on-login
 docs/update-api-reference
