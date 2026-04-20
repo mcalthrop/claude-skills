@@ -8,6 +8,6 @@ When running commands in a shell, use the user's configured/login shell in inter
 
 Reasons:
 
-- `"${SHELL:-/bin/bash}"`: Uses the user's configured/login shell (e.g. `zsh`, `bash`), falling back to `/bin/sh` if `SHELL` is unset. Quoted to handle paths containing spaces.
+- `"${SHELL:-/bin/bash}"`: Uses the user's configured/login shell (e.g. `zsh`, `bash`), falling back to `/bin/bash` if `SHELL` is unset. Quoted to handle paths containing spaces.
 - `-i`: Forces the shell to be interactive. Ensures that the shell's `*rc` file (e.g. `.zshrc`, `.bashrc`) is loaded.
 - `-c`: Takes the first argument as a command to execute.
