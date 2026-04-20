@@ -16,7 +16,8 @@ Download the latest snapshot of ai-resources from GitHub and commit the update o
 
 ```bash
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-WORKTREE_PATH="${REPO_ROOT}/../chore-update-ai-resources"
+REPO_NAME="$(basename "$REPO_ROOT")"
+WORKTREE_PATH="${REPO_ROOT}/../${REPO_NAME}-chore-update-ai-resources"
 git fetch origin main
 git worktree remove "$WORKTREE_PATH" 2>/dev/null || :
 git branch --delete --force chore/update-ai-resources 2>/dev/null || :

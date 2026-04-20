@@ -39,7 +39,8 @@ Check for dependency vulnerabilities and raise a PR that addresses all of them.
 
 ```bash
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-WORKTREE_PATH="${REPO_ROOT}/../fix-security-vulnerabilities"
+REPO_NAME="$(basename "$REPO_ROOT")"
+WORKTREE_PATH="${REPO_ROOT}/../${REPO_NAME}-fix-security-vulnerabilities"
 git fetch origin main
 git worktree add "$WORKTREE_PATH" --branch fix/security-vulnerabilities origin/main
 ```
