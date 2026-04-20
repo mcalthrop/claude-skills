@@ -16,10 +16,10 @@ Run this once in your target repo, from the repo root:
 
 ```sh
 git checkout -b chore/add-ai-resources
-tmp_dir="$(mktemp --directory)"
+TMP_DIR="$(mktemp --directory)"
 curl --location https://github.com/mcalthrop/ai-resources/archive/refs/heads/main.tar.gz \
-  | tar --extract --gzip --strip-components=1 --directory "$tmp_dir"
-mv "$tmp_dir" ai-resources
+  | tar --extract --gzip --strip-components=1 --directory "$TMP_DIR"
+mv "$TMP_DIR" ai-resources
 git add ai-resources
 git commit -m "chore: add ai-resources snapshot"
 ```

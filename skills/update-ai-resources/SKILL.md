@@ -24,11 +24,11 @@ git checkout -b chore/update-ai-resources origin/main
 3. Download the latest snapshot into a temp directory, then replace `ai-resources/`:
 
 ```bash
-tmp_dir="$(mktemp --directory)"
+TMP_DIR="$(mktemp --directory)"
 curl --location https://github.com/mcalthrop/ai-resources/archive/refs/heads/main.tar.gz \
-  | tar --extract --gzip --strip-components=1 --directory "$tmp_dir"
+  | tar --extract --gzip --strip-components=1 --directory "$TMP_DIR"
 rm -rf ai-resources
-mv "$tmp_dir" ai-resources
+mv "$TMP_DIR" ai-resources
 ```
 
 4. Check whether anything changed:
